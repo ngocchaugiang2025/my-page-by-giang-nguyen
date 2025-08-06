@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" contnet="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Kiểm tra xem có giá trị ko, nếu ko thì báo lỗi, có thì submit-->
+    <input type="text" id="input" />
+    <!--để nhập chữ-->
+    <p id="alert"></p>
+    <button id="sub">Submit</button>
+    <script>
+      let sub = document.getElementById("sub"); //Tìm nút có id="sub" và gắn sự kiện click vào đó
+      sub.addEventListener("click", myFunction);
+      function myFunction() {
+        let name = document.getElementById("input");
+        let alert = document.getElementById("alert");
+        if (name.value.length == 0) {
+          alert.innerHTML = "Vui lòng nhập vào giá trị";
+          alert.style.color = "red";
+        } else {
+          alert.innerHTML = ""; // xóa thông báo nếu có giá trị rồi
+        }
+      }
+    </script>
+  </body>
+</html>

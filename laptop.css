@@ -1,0 +1,36 @@
+/* ======== LAPTOP (từ 1024px trở lên) ======== */
+@media (min-width: 1024px) {
+  .custom-row {
+    flex-direction: row;
+  }
+
+  .column-left {
+    width: 50%;
+  }
+
+  
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .certificate-item {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .one-and-two {
+    border-bottom: 1px solid #d6c08d;
+  }
+  .certificate-item {
+    border-bottom: none;
+  }
+
+  
+}
+
